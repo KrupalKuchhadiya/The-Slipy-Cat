@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hand4-PhotoRoom_0: -4966547236686797805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

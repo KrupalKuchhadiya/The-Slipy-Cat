@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Grey Hexa8 1_0: 3590281846951998267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
