@@ -23,6 +23,10 @@ public class HomeManager : MonoBehaviour
     [SerializeField]
     AudioSource musicSource, soundSource;
 
+
+    /// <summary>
+    /// Start And Update
+    /// </summary>
     void Start()
     {
 
@@ -59,47 +63,7 @@ public class HomeManager : MonoBehaviour
             AudioManager.instance.sound = false;
         }
     }
-
-    public void SoundClick()
-    {
-        soundSource.Play();
-    }
-
-    public void SoundManagement()
-    {
-        SoundClick();
-        if (AudioManager.instance.sound)
-        {
-            SoundBtn.GetComponent<Image>().sprite = soundOFF;
-            soundSource.mute = true;
-            AudioManager.instance.sound = false;
-        }
-        else
-        {
-            SoundBtn.GetComponent<Image>().sprite = soundON;
-            soundSource.mute = false;
-            AudioManager.instance.sound = true;
-        }
-    }
-
-
-    public void MusicManagement()
-    {
-        SoundClick();
-        if (AudioManager.instance.music)
-        {
-            MusicBtn.GetComponent<Image>().sprite = musicOFF;
-            musicSource.mute = true;
-            AudioManager.instance.music = false;
-        }
-        else
-        {
-            MusicBtn.GetComponent<Image>().sprite = musicON;
-            musicSource.mute = false;
-            AudioManager.instance.music = true;
-        }
-    }
-
+   
     private void Update()
     {
 
@@ -147,38 +111,92 @@ public class HomeManager : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// Audio Manager
+    /// </summary>
+
+    public void SoundClick()
+    {
+        soundSource.Play();
+    }
+
+    public void SoundManagement()
+    {
+        SoundClick();
+        if (AudioManager.instance.sound)
+        {
+            SoundBtn.GetComponent<Image>().sprite = soundOFF;
+            soundSource.mute = true;
+            AudioManager.instance.sound = false;
+        }
+        else
+        {
+            SoundBtn.GetComponent<Image>().sprite = soundON;
+            soundSource.mute = false;
+            AudioManager.instance.sound = true;
+        }
+    }
+
+    public void MusicManagement()
+    {
+        SoundClick();
+        if (AudioManager.instance.music)
+        {
+            MusicBtn.GetComponent<Image>().sprite = musicOFF;
+            musicSource.mute = true;
+            AudioManager.instance.music = false;
+        }
+        else
+        {
+            MusicBtn.GetComponent<Image>().sprite = musicON;
+            musicSource.mute = false;
+            AudioManager.instance.music = true;
+        }
+    }
+
+    /// <summary>
+    /// Local Method
+    /// </summary>
     public void LoadingPanelOpen()
     {
+        SoundClick();
         Red = true;
         LoadingPanel.SetActive(true);
         HomePanel.SetActive(false);
     }
+    
     public void SettingPanelOpen()
     {
+        SoundClick();
         HomePanel.SetActive(false);
         SettingPanel.SetActive(true);
     }
 
     public void SettingPanelClose()
     {
+        SoundClick();
         HomePanel.SetActive(true);
         SettingPanel.SetActive(false);
     }
 
     public void ExitPanelOpen()
     {
+        SoundClick();
         HomePanel.SetActive(false);
         ExitPanel.SetActive(true);
     }
 
     public void ExitPanelClose()
     {
+        SoundClick();
         HomePanel.SetActive(true);
         ExitPanel.SetActive(false);
     }
 
     public void ExitPanelYes()
     {
+        SoundClick();
         Application.Quit();
     }
 }
