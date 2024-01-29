@@ -208,39 +208,7 @@ public class GameManager : MonoBehaviour
         PossibleToWalk.Clear();
         if (OddHexagon.Contains(AllGeneratedHexagon[MidPoint]))
         {
-            //AllGeneratedHexagon[MidPoint + 1].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint - 1].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint + 12].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint + 11].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint - 11].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint - 10].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-
-            /*====================================================================================================*/
-
-            //if(!AllGeneratedHexagon[MidPoint - 1])
-            //{
-            //PossibleToWalk.Add(AllGeneratedHexagon[MidPoint - 1]);
-            //}
-            //if(!AllGeneratedHexagon[MidPoint + 12])
-            //{
-            //PossibleToWalk.Add(AllGeneratedHexagon[MidPoint + 12]);
-            //}
-            //if(!AllGeneratedHexagon[MidPoint + 11])
-            //{
-            //PossibleToWalk.Add(AllGeneratedHexagon[MidPoint + 11]);
-            //}
-            //if(!AllGeneratedHexagon[MidPoint - 11])
-            //{
-            //PossibleToWalk.Add(AllGeneratedHexagon[MidPoint - 11]);
-            //}
-            //if(!AllGeneratedHexagon[MidPoint - 10])
-            //{
-            //PossibleToWalk.Add(AllGeneratedHexagon[MidPoint - 10]);
-            //}
-
-            /*====================================================================================================*/
-
-
+            
             PossibleToWalk.Add(AllGeneratedHexagon[MidPoint - 1]);
             PossibleToWalk.Add(AllGeneratedHexagon[MidPoint + 12]);
             PossibleToWalk.Add(AllGeneratedHexagon[MidPoint + 11]);
@@ -249,37 +217,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            //AllGeneratedHexagon[MidPoint + 1].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint - 1].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint + 11].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint + 10].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint - 12].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            //AllGeneratedHexagon[MidPoint - 11].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-
-            /*====================================================================================================*/
-
-            //if (!AllGeneratedHexagon[MidPoint - 1])
-            //{
-            //    PossibleToWalk.Add(AllGeneratedHexagon[MidPoint - 1]);
-            //}
-            //if (!AllGeneratedHexagon[MidPoint - 12])
-            //{
-            //    PossibleToWalk.Add(AllGeneratedHexagon[MidPoint - 12]);
-            //}
-            //if (!AllGeneratedHexagon[MidPoint + 11])
-            //{
-            //    PossibleToWalk.Add(AllGeneratedHexagon[MidPoint + 11]);
-            //}
-            //if (!AllGeneratedHexagon[MidPoint - 11])
-            //{
-            //    PossibleToWalk.Add(AllGeneratedHexagon[MidPoint - 11]);
-            //}
-            //if (!AllGeneratedHexagon[MidPoint + 10])
-            //{
-            //    PossibleToWalk.Add(AllGeneratedHexagon[MidPoint + 10]);
-            //}
-
-            /*====================================================================================================*/
+            
 
             PossibleToWalk.Add(AllGeneratedHexagon[MidPoint + 1]);
             PossibleToWalk.Add(AllGeneratedHexagon[MidPoint - 1]);
